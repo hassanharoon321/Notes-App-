@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Note Tracker App</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- TOP START -->
+      <div class="top">
+        <h1>Note Taker</h1>
+        <h3>Add a New Note:</h3>
+      </div>
+      <!-- TOP END -->
+
+      <!-- NOTE INPUT BUTTON START -->
+      <div class="second">
+        <div class="input-group">
+          <label for="">Note:</label>
+          <textarea
+            class="form-control"
+            aria-label="With textarea"
+            id="notes"
+          ></textarea>
+        </div>
+        <div class="note-btn">
+          <button
+            type="button"
+            class="btn btn-primary btn-lg"
+            onclick="addNotes()"
+          >
+            Add Note
+          </button>
+        </div>
+      </div>
+      <!-- NOTE INPUT BUTTON END -->
+
+      <!-- NODE AREA START -->
+      <div class="footer" id="hide">
+        <p>No notes added yet!</p>
+      </div>
+      <!-- NODE AREA END -->
+
+      <!-- New Start-->
+      <div class="notes">
+        <div class="container new-start" id="main"></div>
+      </div>
+
+      <!-- New End -->
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
